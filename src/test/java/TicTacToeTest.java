@@ -50,4 +50,17 @@ public class TicTacToeTest {
         System.out.println("Player 2 wins: " + player2);
     }
 
+    @Test
+    public void Player2WinnerDiagonal() {
+        TicTacToe ticTacToeSecondWinner = new TicTacToe(3);
+        ticTacToeSecondWinner.move(0,0,2);
+        ticTacToeSecondWinner.move(1,0,1);
+        ticTacToeSecondWinner.move(1,1,2);
+        int noOneSecondWinner = ticTacToeSecondWinner.move(0,1,1);
+        int player2 = ticTacToeSecondWinner.move(2,2,2);
+
+        System.out.println("No one wins: " + noOneSecondWinner);
+        System.out.println("Player 2 wins: " + player2);
+    }
+
 }
