@@ -13,7 +13,7 @@ public class TicTacToeTest {
         int player1 = ticTacToeFirstWinner.move(0,2,1);
 
         Assert.assertEquals(0, noOneFirstWinner); // No one statement
-        Assert.assertEquals(1, player1); // No one statement
+        Assert.assertEquals(1, player1); // Player 1 statement
 
         System.out.println("No one wins: " + noOneFirstWinner);
         System.out.println("Player 1 wins: " + player1);
@@ -29,7 +29,7 @@ public class TicTacToeTest {
         int player2 = ticTacToeSecondWinner.move(0,2,2);
 
         Assert.assertEquals(0, noOneSecondWinner); // No one statement
-        Assert.assertEquals(2, player2); // No one statement
+        Assert.assertEquals(2, player2); // Player 2 statement
 
         System.out.println("No one wins: " + noOneSecondWinner);
         System.out.println("Player 2 wins: " + player2);
@@ -45,7 +45,7 @@ public class TicTacToeTest {
         int player2 = ticTacToeSecondWinner.move(2,2,2);
 
         Assert.assertEquals(0, noOneSecondWinner); // No one statement
-        Assert.assertEquals(2, player2); // No one statement
+        Assert.assertEquals(2, player2); // Player 2 statement
 
         System.out.println("No one wins: " + noOneSecondWinner);
         System.out.println("Player 2 wins: " + player2);
